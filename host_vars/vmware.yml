@@ -1,0 +1,25 @@
+hostname: vmware
+
+host_extra_packages:
+
+host_extra_aur_packages: []
+
+# UEFI/GPT
+drive:
+  device: /dev/sda
+  table: gpt
+  partitions:
+    - name: root
+      start: 512MiB
+      end: 100%
+      filesystem: ext4
+      mountpoint: /
+      encrypt: true
+
+    - name: efi
+      start: 0%
+      end: 512MiB
+      flags: [boot]
+      filesystem: vfat
+      mountpoint: /boot/efi
+      encrypt: false
