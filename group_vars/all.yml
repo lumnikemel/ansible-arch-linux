@@ -5,6 +5,7 @@
 machine_aliases:
   VirtualBox: vbox.yml
   XPS 13 9300: xps.yml
+  VMware7,1: vmware.yml
 
 arch_root: /mnt
 
