@@ -37,6 +37,7 @@ Install OS
 3. Install dependencies: Ansible and `passlib` (for hashing password):
 
     ```
+    echo 'Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
     pacman -Sy git ansible python-passlib
     ```
 
