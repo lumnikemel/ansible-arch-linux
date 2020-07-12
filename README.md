@@ -44,7 +44,7 @@ Install OS
 4. Download and decompress playbook from GitHub:
 
     ```
-    git clone https://github.com/zoresvit/ansible-arch-linux
+    git clone https://github.com/lumnikemel/ansible-arch-linux
     cd ansible-arch-linux
     ```
 
