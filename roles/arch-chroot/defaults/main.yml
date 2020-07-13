@@ -46,4 +46,4 @@ base_packages:
   - wpa_supplicant
   - zsh
   - zsh-completions
-  #- glances
+  - glances
