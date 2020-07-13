@@ -21,6 +21,9 @@
     dest: /etc/hosts
     mode: 644
 
+- name: initialize pacman keys
+  shell: pacman-key --populate archlinux
+  
 - name: install base packages
   pacman:
     name: "{{ base_packages }}"
